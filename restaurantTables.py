@@ -43,3 +43,39 @@ restaurant_tables2 = [
     [5,        'o',      'x',      'o',      'x',      'o',      'o'],
     [6,        'o',      'o',      'o',      'o',      'x',      'o']
 ]
+#LV1 
+print (restaurant_tables2[1][2]) #should print the respectve index at 1,2
+print (restaurant_tables2[2][1]) # returns return corrdinate 2,1
+print (restaurant_tables2[4][1]) # prints out fourth index first column
+
+open_tables =[] # empty list to get everything 
+for table_data in (restaurant_tables2): #for loop that contains from the varaible [considers everything]
+    if len(table_data)>0:  #Reurns a letter  within the sta structure above index zero
+        table_index=table_data[1] #assigned varaible that skips straight to index one for open tables
+        status= table_data[1]
+        if status=='o': # if statement that checks for tables marked o
+            open_tables.append(table_index) # function built to add / include more tables marked o in process
+    print(f"open tables: {open_tables}")  # desired output 
+
+    # LV 2 
+def one_table_for_more(free_tables, party_size): # two parameters dealing with tables and size
+    if table_capacity >=party_size: # condition checking for capacity over num of people
+        print("None, fully occupied ")
+    elif party size <= table capacity:
+        print("Ay, it's open over here")
+        
+    return free_tables
+
+# LV 3
+def available_seats():
+ empty_seats= [0,        'T1(2)',  'T2(4)',  'T3(2)',  'T4(6)',  'T5(4)',  'T6(2)'],
+    [1,        'x',      'o',      'o',      'o',      'o',      'x'],
+    [2,        'o',      'x',      'o',      'o',      'x',      'o'],
+    [3,        'x',      'x',      'o',      'x',      'o',      'o']
+
+    #message([start: stop: step])
+
+#    o      x  o  x   o   x  o   x  o  x  o  x  o  x   o   x 
+#   T1(2)   T2(3)          T2(4)
+
+print (message[T1(2):T2(4)])
