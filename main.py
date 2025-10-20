@@ -3,9 +3,16 @@
 
 
 def get_free_tables(tables):
-    """
     Level 1
-    Returns a list of table IDs (or entire objects) that are currently free.
+restaurant_tables = [
+  [0,      'T1(2)',  'T2(4)',  'T3(2)',  'T4(6)',  'T5(4)',  'T6(2)'],
+  [1,      'o',      'o',      '0',      'o',      'o',      'o'],
+  [2,      'x',      'o',      'x'      'x',      'o',      'x'],
+  [3,      'o',      'o',      '0',      'o',      'o',      'o'],
+  [4,      'o',      'x',      'o',      '0',      'x',      'o'],
+  [5,      'o',      'o',      'o',      '0',      'o',      'o'],
+  [6,      'o',      'o',      'o',      'x',      'o',      'o'],
+
     """
     # TODO: Implement your logic here
     # HINT: Loop through each 'table' dict, check 'occupied' status.
